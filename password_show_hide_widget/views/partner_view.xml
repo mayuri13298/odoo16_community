@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- some of code example for password widget   -->
+    <record model="ir.ui.view" id="partner_password_form">
+        <field name="name">password.form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='vat']" position="after">
+               <field name="password" widget="password" type="password"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="employee_password_form">
+        <field name="name">password.form</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='pin']" position="replace">
+               <field name="pin" string="PIN Code" widget="password" type="password"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
