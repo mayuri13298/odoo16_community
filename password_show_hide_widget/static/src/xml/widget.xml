@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="password_widget.FieldPassword" owl="1">
+        <input class="o_form_input password" id="password_id"
+               type="password"
+        />
+        <i class="fa fa-eye-slash show_hide_password" t-on-click="onIconClick"></i>
+    </t>
+</templates>
