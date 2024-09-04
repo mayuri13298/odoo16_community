@@ -19,7 +19,7 @@
             'password_show_hide_widget/static/src/xml/widget.xml',
         ],
     },
-    'images': ['static/description/icon.jpg'],
+    'images': ['static/description/main.jpg'],
     'installable': True,
     'auto_install': False,
     'license': 'LGPL-3',
